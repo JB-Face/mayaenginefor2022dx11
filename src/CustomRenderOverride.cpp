@@ -98,7 +98,7 @@ bool CustomRenderOverride::InitializeEngine()
 	TCHAR myDocuments[MAX_PATH];
 	::SHGetFolderPath(nullptr, CSIDL_MYDOCUMENTS, nullptr, 0, myDocuments);
 	std::string dataDirectory(myDocuments);
-	dataDirectory = "C:\\git\\mayaenginefor2022dx11\\assets";
+	dataDirectory = "C:\\Users\\57376\\source\\repos\\JB-Face\\mayaenginefor2022dx11\\assets";
 
 	ID3D11Device* dxDevice = (ID3D11Device*)theRenderer->GPUDeviceHandle();
 	if (!dxDevice) return false;
